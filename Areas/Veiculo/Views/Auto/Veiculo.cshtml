@@ -1,0 +1,45 @@
+﻿@model Exe.Models.Veiculos
+
+@{
+	ViewData["Title"] = "Carro";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Veículos</h1>
+<div class="d-flex">
+	<div class="col-md-3.5">
+		<figure class="card card-product">
+			<div class="img-wrap">
+				<img src="~/images/Honda Biz.jpg" width="100%">
+			</div>
+			<figcaption class="info-wrap">
+				<h4 class="title"><i class="fa fa-mortorcycle" aria-hidden="true"></i><b>Marca:</b> Bugatti</h4>
+				<p class="desc"> Nome: Honda Biz <br /> Transmissão: Semiautomática <br /> Categoria: @Model.Categoria <br /> Tipo: Comum</p>
+			</figcaption>
+		</figure>
+	</div>
+
+	<div class="col-md-3.5">
+		<figure class="card card-product">
+			<div class="img-wrap">
+				<img src="~/images/Piaggio Vespa.jpg" width="100%">
+			</div>
+			<figcaption class="info-wrap">
+				<h4 class="title"><i class="fa fa-mortorcycle" aria-hidden="true"></i><b>Marca:</b> Harley Davidson</h4>
+				<p class="desc"> Nome: Piaggio Vespa <br /> Cilindradas: 125 <br /> Categoria: Comum <br /> Partida: Elétrica</p>
+			</figcaption>
+		</figure>
+	</div>
+
+	<div class="col-md-3.5">
+		<figure class="card card-product">
+			<div class="img-wrap">
+				<img src="~/images/Kawasaki Ninja.jpg" width="100%">
+			</div>
+			<figcaption class="info-wrap">
+				<h4 class="title"><i class="fa fa-mortorcycle" aria-hidden="true"></i><b>Marca:</b> @Model.Fabricante</h4>
+				<p class="desc"> Nome: Kasaki Ninja <br /> Transmissão: Automática <br /> Categoria: @Model.Categoria <br /> Tipo: Luxo</p>
+			</figcaption>
+		</figure>
+	</div>
+</div>

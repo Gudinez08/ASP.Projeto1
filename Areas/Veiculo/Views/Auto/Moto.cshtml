@@ -1,0 +1,19 @@
+﻿@model Exe.Models.Moto
+
+@{
+	ViewData["Title"] = "Moto";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Moto</h1>
+<div class="com-md-10">
+	<figure class="card card-product">
+		<div class="img-wrap">
+			<center><img src="~/images/Harley Davidson.jpg" width="100%"></center>
+			<figcaption class="info-wrap">
+				<h4 class="title"><i class="fa fa-mortorcycle" aria-hidden="true"></i><b>Marca:</b> @Model.Fabricante</h4>
+				<p class="desc"> Nome: Harley Davidson Sportser <br /> Cilindradas: 1000 <br /> Categoria: luxo <br /> Partida: elétrica</p>
+			</figcaption>
+		</div>
+	</figure>
+</div>

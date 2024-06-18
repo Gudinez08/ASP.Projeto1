@@ -1,0 +1,18 @@
+﻿@model Exe.Models.Carro
+
+@{
+	ViewData["Title"] = "Carro";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Carro</h1>
+<div class="com-md-10">
+	<figure class="card card-product">
+		<div class="img-wrap">
+			<center><img src="~/images/Fusca.jpg" width="100%"></img></center>
+			<figcaption class="info-wrap">
+				<h4 class="title"><i class="fa fa-mortorcycle" aria-hidden="true"></i><b>Marca:</b> @Model.Fabricante</h4>
+				<p class="desc"> Nome: Fusca <br /> Transmissão: @Model.Transmissao <br /> Categoria: Antigo, mas de luxo <br /> Tipo: @Model.Tipo</p>
+			</figcaption>
+	</figure>
+</div>
